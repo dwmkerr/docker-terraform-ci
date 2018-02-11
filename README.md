@@ -1,5 +1,7 @@
 # docker-terraform-ci [![CircleCI](https://circleci.com/gh/dwmkerr/docker-terraform-ci.svg?style=shield)](https://circleci.com/gh/dwmkerr/docker-terraform-ci) [![ImageLayers Badge](https://badge.imagelayers.io/dwmkerr/terraform-ci:latest.svg)](https://imagelayers.io/?images=dwmkerr/terraform-ci:latest 'Get your own badge on imagelayers.io') -->
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dwmkerr/docker-terraform-ci.svg)](https://greenkeeper.io/)
+
 [![Docker Hub Badge](http://dockeri.co/image/dwmkerr/terraform-ci)](https://registry.hub.docker.com/u/dwmkerr/terraform-ci/)
 
 The `dwmkerr/terraform-ci` Dockerfile provides a useful baseline image for run Terraform related CI tasks.
