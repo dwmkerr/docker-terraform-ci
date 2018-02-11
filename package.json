@@ -1,0 +1,18 @@
+{
+  "name": "docker-terraform-ci",
+  "version": "0.1.0",
+  "description": "Dockerfile for Terraform CI related tasks.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwmkerr/docker-terraform-ci.git"
+  },
+  "author": "Dave Kerr <github.com/dwmkerr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwmkerr/docker-terraform-ci/issues"
+  },
+  "homepage": "https://github.com/dwmkerr/docker-terraform-ci#readme"
+}

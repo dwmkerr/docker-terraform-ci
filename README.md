@@ -1,4 +1,4 @@
-# docker-terraform-ci <!-- [![CircleCI](https://circleci.com/gh/dwmkerr/docker-dynamodb.svg?style=shield)](https://circleci.com/gh/dwmkerr/docker-dynamodb) [![ImageLayers Badge](https://badge.imagelayers.io/dwmkerr/dynamodb:latest.svg)](https://imagelayers.io/?images=dwmkerr/dynamodb:latest 'Get your own badge on imagelayers.io') -->
+# docker-terraform-ci [![CircleCI](https://circleci.com/gh/dwmkerr/docker-terraform-ci.svg?style=shield)](https://circleci.com/gh/dwmkerr/docker-terraform-ci) [![ImageLayers Badge](https://badge.imagelayers.io/dwmkerr/terraform-ci:latest.svg)](https://imagelayers.io/?images=dwmkerr/terraform-ci:latest 'Get your own badge on imagelayers.io') -->
 
 [![Docker Hub Badge](http://dockeri.co/image/dwmkerr/terraform-ci)](https://registry.hub.docker.com/u/dwmkerr/terraform-ci/)
 
@@ -33,6 +33,7 @@ The code is structued like this:
 Dockerfile     # the important thing, the actual dockerfile
 makefile       # commands to build, test deploy etc
 test.sh        # a simple test script
+package.json   # used for versioning only
 ```
 
 ## The Makefile
