@@ -10,7 +10,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: docker login -e $DOCKER_EMAIL -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+      - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
       - run: make deploy
 
 workflows:
