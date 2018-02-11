@@ -22,9 +22,6 @@ It contains:
 - `terraform`
 - `tflint`
 
-# Instructions
-
-
 # Coding
 
 The code is structued like this:
@@ -42,7 +39,7 @@ The makefile contains commands to build, test and deploy. Parameters can be pass
 
 | Command                  | Notes                             |
 |--------------------------|-----------------------------------|
-| `make build`             | Builds the image `dwmkerr/terraform-ci:latest`. If a `BUILD_NUM` parameter is provided, also builds `dwmkerr/terraform-ci:BUILD_NUM`. |
+| `make build`             | Builds the image `dwmkerr/terraform-ci:latest` and `dwmkerr/terraform-ci:<version>`. The version is loaded from [`package.json`](./package.json). |
 | `make test`              | Runs the test scripts. |
 | `make deploy`            | Deploys the images to the docker hub. If you are not logged in, you're gonna have a bad time. |
 
