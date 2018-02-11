@@ -1,4 +1,4 @@
-# docker-terraform-ci [![CircleCI](https://circleci.com/gh/dwmkerr/docker-terraform-ci.svg?style=shield)](https://circleci.com/gh/dwmkerr/docker-terraform-ci) [![ImageLayers Badge](https://badge.imagelayers.io/dwmkerr/terraform-ci:latest.svg)](https://imagelayers.io/?images=dwmkerr/terraform-ci:latest 'Get your own badge on imagelayers.io') -->
+# docker-terraform-ci [![CircleCI](https://circleci.com/gh/dwmkerr/docker-terraform-ci.svg?style=shield)](https://circleci.com/gh/dwmkerr/docker-terraform-ci)
 
 [![Docker Hub Badge](http://dockeri.co/image/dwmkerr/terraform-ci)](https://registry.hub.docker.com/u/dwmkerr/terraform-ci/)
 
