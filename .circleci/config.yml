@@ -1,0 +1,15 @@
+version: 2
+jobs:
+ build:
+   machine: true
+   steps:
+     - checkout
+     - run: make build
+     - run: make test
+     # - run: docker push company/app:$CIRCLE_BRANCH
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build
