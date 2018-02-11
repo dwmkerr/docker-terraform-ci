@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Bomb if anything fails.
 set -e
 
