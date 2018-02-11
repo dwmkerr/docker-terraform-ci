@@ -17,6 +17,7 @@ deploy:
 
 # Test the build.
 circleci:
+	circleci config validate
 	circleci build --job test
 	circleci build --job deploy
 
