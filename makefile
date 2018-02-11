@@ -8,11 +8,9 @@ else
 	docker build -t dwmkerr/terraform-ci:$(BUILD_NUM) .	
 endif
 
-# Run the tests. These do things like kill containers, so run with caution.
+# Run the tests.
 test: build
-	./test/basics.test.sh
-	./test/ephemeral.test.sh
-	./test/persistent.test.sh
+	./test.sh
 
 # Deploy the images to the Docker Hub. Assumes you are logged in!
 deploy: 
