@@ -4,7 +4,7 @@
 
 The `dwmkerr/terraform-ci` Dockerfile provides a useful baseline image for run Terraform related CI tasks.
 
-You can use this image to run CI pipelines which build infrastructure.
+You can use this image to run CI pipelines which build infrastructure. There is a more detailed article describing this approach on the way, which uses a CI build for [`dwmkerr/terraform-aws-openshift`](https://github.com/dwmkerr/terraform-aws-openshift) as an example.
 
 The image is based on Debian Stretch (specifically the official [`debian:stretch`](https://hub.docker.com/_/debian/) image).
 
