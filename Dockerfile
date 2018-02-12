@@ -11,7 +11,7 @@ MAINTAINER Dave Kerr <github.com/dwmkerr>
 # Install some common tools we'll need for builds.
 # Also install tools needed to use this as a CircleCI 2 build image. See:
 #   https://circleci.com/docs/2.0/custom-images/
-RUN apt-get -qq update && apt-get -qq install -y \
+RUN apt-get update -qq && apt-get install -qq -y \
     make \
     wget \
     git \
