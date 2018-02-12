@@ -3,7 +3,20 @@
 # Bomb if anything fails.
 set -e
 
-function check_version {
+function assert_installed {
+    program=$1
+    command=$2
+
+    echo "Checking ${program} is installed..."
+    result=$(eval "docker run dwmkerr/terraform-ci command -v ${command}")
+    if ! [ -x "${result}" ]; then
+        echo "Error: Expected ${program} to be installed" >&2
+        exit 1
+    else
+        echo "Success: ${program} is installed"
+    fi
+}
+function assert_version {
     program=$1
     command=$2
     version=$3
@@ -18,7 +31,7 @@ function check_version {
     fi
 }
 
-# Check the terraform version.
-terraform=$(docker run dwmkerr/terraform-ci terraform -v)
-check_version "terraform" "terraform -v" "0.11.3"
-check_version "tflint" "tflint -v" "0.5.4"
+# Assert the versions of tools we need.
+assert_version "terraform" "terraform -v" "0.11.3"
+assert_version "tflint" "tflint -v" "0.5.4"
+assert_version "awscli" "aws --version" "*"
