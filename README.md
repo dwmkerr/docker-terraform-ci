@@ -1,4 +1,4 @@
-# docker-terraform-ci [![CircleCI](https://circleci.com/gh/dwmkerr/docker-terraform-ci.svg?style=shield)](https://circleci.com/gh/dwmkerr/docker-terraform-ci) [![ImageLayers Badge](https://badge.imagelayers.io/dwmkerr/terraform-ci:latest.svg)](https://imagelayers.io/?images=dwmkerr/terraform-ci:latest 'Get your own badge on imagelayers.io') -->
+# docker-terraform-ci [![CircleCI](https://circleci.com/gh/dwmkerr/docker-terraform-ci.svg?style=shield)](https://circleci.com/gh/dwmkerr/docker-terraform-ci)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/dwmkerr/docker-terraform-ci.svg)](https://greenkeeper.io/)
 
@@ -6,7 +6,7 @@
 
 The `dwmkerr/terraform-ci` Dockerfile provides a useful baseline image for run Terraform related CI tasks.
 
-You can use this image to run CI pipelines which build infrastructure.
+You can use this image to run CI pipelines which build infrastructure. There is a more detailed article describing this approach on the way, which uses a CI build for [`dwmkerr/terraform-aws-openshift`](https://github.com/dwmkerr/terraform-aws-openshift) as an example.
 
 The image is based on Debian Stretch (specifically the official [`debian:stretch`](https://hub.docker.com/_/debian/) image).
 
@@ -23,9 +23,6 @@ It contains:
 - `ca-certificates`
 - `terraform`
 - `tflint`
-
-# Instructions
-
 
 # Coding
 
@@ -44,7 +41,7 @@ The makefile contains commands to build, test and deploy. Parameters can be pass
 
 | Command                  | Notes                             |
 |--------------------------|-----------------------------------|
-| `make build`             | Builds the image `dwmkerr/terraform-ci:latest`. If a `BUILD_NUM` parameter is provided, also builds `dwmkerr/terraform-ci:BUILD_NUM`. |
+| `make build`             | Builds the image `dwmkerr/terraform-ci:latest` and `dwmkerr/terraform-ci:<version>`. The version is loaded from [`package.json`](./package.json). |
 | `make test`              | Runs the test scripts. |
 | `make deploy`            | Deploys the images to the docker hub. If you are not logged in, you're gonna have a bad time. |
 

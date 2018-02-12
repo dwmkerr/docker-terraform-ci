@@ -10,6 +10,9 @@ jobs:
     machine: true
     steps:
       - checkout
+      - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+      # A little tricky to cache inmges between jobs, so just rebuild.
+      - run: make build
       - run: make deploy
 
 workflows:
@@ -18,7 +21,8 @@ workflows:
     jobs:
       - test
       - deploy:
-          requires: test
+          requires:
+            - test
           filters:
             branches:
               only: master
