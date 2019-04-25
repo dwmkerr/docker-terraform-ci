@@ -4,13 +4,29 @@
 
 The `dwmkerr/terraform-ci` Dockerfile provides a useful baseline image for run Terraform related CI tasks.
 
+
+<!-- vim-markdown-toc GFM -->
+
+* [Introduction](#introduction)
+* [Tooling](#tooling)
+* [Coding](#coding)
+    * [The Makefile](#the-makefile)
+    * [The Tests](#the-tests)
+
+<!-- vim-markdown-toc -->
+
+# Introduction
+
 You can use this image to run CI pipelines which build infrastructure. There is a more detailed article describing this approach on the way, which uses a CI build for [`dwmkerr/terraform-aws-openshift`](https://github.com/dwmkerr/terraform-aws-openshift) as an example.
 
 The image is based on Debian Stretch (specifically the official [`debian:stretch`](https://hub.docker.com/_/debian/) image).
 
-It contains:
+# Tooling
 
-- All baseline Debian stretch tools
+This image contains a number of tools which are useful when working with Terraform.
+
+All baseline Debian stretch tools:
+
 - `make`
 - `wget`
 - `git`
@@ -19,12 +35,19 @@ It contains:
 - `gzip`
 - `unzip`
 - `ca-certificates`
+
+Terraform, and [Terraform Lint](https://github.com/wata727/tflint):
+
 - `terraform`
 - `tflint`
 
-# Coding
+Some tools which are useful for [Terraform Backends](https://www.terraform.io/docs/backends/)
 
-The code is structued like this:
+- `aws`
+
+# Coding 
+
+The code is structured like this:
 
 ```
 Dockerfile     # the important thing, the actual dockerfile
@@ -35,7 +58,7 @@ package.json   # used for versioning only
 
 ## The Makefile
 
-The makefile contains commands to build, test and deploy. Parameters can be passed as environment variables or through the commandline.
+The makefile contains commands to build, test and deploy. Parameters can be passed as environment variables or through the command-line.
 
 | Command                  | Notes                             |
 |--------------------------|-----------------------------------|
@@ -45,4 +68,4 @@ The makefile contains commands to build, test and deploy. Parameters can be pass
 
 ## The Tests
 
-The tests are simple bash scripts which check for basic capabilties *which relate to the image*. Essentially, this means they'll test the tools are installed.
+The tests are simple bash scripts which check for basic capabilities *which relate to the image*. Essentially, this means they'll test the tools are installed.
