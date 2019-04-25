@@ -22,7 +22,7 @@ function assert_version {
     version=$3
 
     echo "Checking ${program} version..."
-    result=$(eval "docker run dwmkerr/terraform-ci ${command}")
+    result=$(eval "docker run dwmkerr/terraform-ci ${command}" 2>&1)
     if [[ ${result} != *"${version}"* ]]; then
         echo "Error: Expected ${program} ${version}, but got: ${result}" >&2
         exit 1
@@ -34,4 +34,4 @@ function assert_version {
 # Assert the versions of tools we need.
 assert_version "terraform" "terraform -v" "0.11.3"
 assert_version "tflint" "tflint -v" "0.5.4"
-assert_version "awscli" "aws --version" "*"
+assert_version "awscli" "aws --version" "1.16"

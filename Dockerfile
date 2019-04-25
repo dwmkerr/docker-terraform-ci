@@ -37,4 +37,4 @@ RUN chmod ugo+x /usr/local/bin/tflint
 RUN tflint -v
 
 # Install the AWS CLI.
-RUN pip install awscli
+RUN pip install awscli==1.16
