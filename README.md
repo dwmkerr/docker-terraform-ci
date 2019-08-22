@@ -4,7 +4,6 @@
 
 The `dwmkerr/terraform-ci` Dockerfile provides a useful baseline image for run Terraform related CI tasks.
 
-
 <!-- vim-markdown-toc GFM -->
 
 * [Introduction](#introduction)
@@ -38,8 +37,8 @@ All baseline Debian stretch tools:
 
 Terraform, and [Terraform Lint](https://github.com/wata727/tflint):
 
-- `terraform`
-- `tflint`
+- `terraform` (0.12)
+- `tflint` (0.10)
 
 Some tools which are useful for [Terraform Backends](https://www.terraform.io/docs/backends/)
 
