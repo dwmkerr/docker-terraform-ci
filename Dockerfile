@@ -25,7 +25,7 @@ RUN apt-get update -qq && apt-get install -qq -y \
 
 # Install Terraform.
 RUN wget -q https://releases.hashicorp.com/terraform/0.12.6/terraform_0.12.6_linux_amd64.zip
-RUN unzip terraform_0.11.13_linux_amd64.zip
+RUN unzip terraform_0.12.6_linux_amd64.zip
 RUN install terraform /usr/local/bin
 RUN terraform -v
 
