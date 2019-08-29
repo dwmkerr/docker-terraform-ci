@@ -1,6 +1,6 @@
 {
   "name": "docker-terraform-ci",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Dockerfile for Terraform CI related tasks.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
