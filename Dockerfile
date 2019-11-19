@@ -24,8 +24,8 @@ RUN apt-get update -qq && apt-get install -qq -y \
     python-pip
 
 # Install Terraform.
-RUN wget -q https://releases.hashicorp.com/terraform/0.12.7/terraform_0.12.7_linux_amd64.zip
-RUN unzip terraform_0.12.7_linux_amd64.zip
+RUN wget -q https://releases.hashicorp.com/terraform/0.12.10/terraform_0.12.10_linux_amd64.zip
+RUN unzip terraform_0.12.10_linux_amd64.zip
 RUN install terraform /usr/local/bin
 RUN terraform -v
 
