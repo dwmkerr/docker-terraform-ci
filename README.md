@@ -1,4 +1,4 @@
-# docker-terraform-ci [![CircleCI](https://circleci.com/gh/dwmkerr/docker-terraform-ci.svg?style=shield)](https://circleci.com/gh/dwmkerr/docker-terraform-ci) [![Greenkeeper badge](https://badges.greenkeeper.io/dwmkerr/docker-terraform-ci.svg)](https://greenkeeper.io/) [![GuardRails badge](https://badges.production.guardrails.io/dwmkerr/docker-terraform-ci.svg)](https://www.guardrails.io)
+# docker-terraform-ci [![CircleCI](https://circleci.com/gh/dwmkerr/docker-terraform-ci.svg?style=shield)](https://circleci.com/gh/dwmkerr/docker-terraform-ci) [![Greenkeeper badge](https://badges.greenkeeper.io/dwmkerr/docker-terraform-ci.svg)](https://greenkeeper.io/) [![GuardRails badge](https://badges.guardrails.io/dwmkerr/docker-dynamodb.svg?token=569f2cc38a148f785f3a38ef0bcf5f5964995d7ca625abfad9956b14bd06ad96&provider=github)](https://dashboard.guardrails.io/default/gh/dwmkerr/docker-dynamodb)
 
 [![Docker Hub Badge](http://dockeri.co/image/dwmkerr/terraform-ci)](https://registry.hub.docker.com/u/dwmkerr/terraform-ci/)
 
