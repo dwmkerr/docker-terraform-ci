@@ -35,6 +35,10 @@ All baseline Debian stretch tools:
 - `unzip`
 - `ca-certificates`
 
+Some basic additional tools:
+
+- [`shellcheck`](https://github.com/koalaman/shellcheck) - for checking shell scripts
+
 Terraform, and [Terraform Lint](https://github.com/wata727/tflint):
 
 - `terraform` (0.12)
