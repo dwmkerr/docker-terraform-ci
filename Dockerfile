@@ -31,7 +31,7 @@ RUN install terraform /usr/local/bin
 RUN terraform -v
 
 # Install tflint.
-RUN wget -q https://github.com/wata727/tflint/releases/download/v0.10.1/tflint_linux_amd64.zip
+RUN wget -q https://github.com/wata727/tflint/releases/download/v0.13.4/tflint_linux_amd64.zip
 RUN unzip tflint_linux_amd64.zip
 RUN install tflint /usr/local/bin
 RUN chmod ugo+x /usr/local/bin/tflint
