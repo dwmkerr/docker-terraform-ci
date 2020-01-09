@@ -21,16 +21,17 @@ RUN apt-get update -qq && apt-get install -qq -y \
     unzip \
     ca-certificates \
     python \
-    python-pip
+    python-pip \
+    shellcheck
 
 # Install Terraform.
-RUN wget -q https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
-RUN unzip terraform_0.12.18_linux_amd64.zip
+RUN wget -q https://releases.hashicorp.com/terraform/0.12.19/terraform_0.12.19_linux_amd64.zip
+RUN unzip terraform_0.12.19_linux_amd64.zip
 RUN install terraform /usr/local/bin
 RUN terraform -v
 
 # Install tflint.
-RUN wget -q https://github.com/wata727/tflint/releases/download/v0.10.1/tflint_linux_amd64.zip
+RUN wget -q https://github.com/wata727/tflint/releases/download/v0.13.4/tflint_linux_amd64.zip
 RUN unzip tflint_linux_amd64.zip
 RUN install tflint /usr/local/bin
 RUN chmod ugo+x /usr/local/bin/tflint

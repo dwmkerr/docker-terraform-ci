@@ -35,6 +35,6 @@ function assert_version {
 }
 
 # Assert the versions of tools we need.
-assert_version "terraform" "terraform -v" "0.12.18"
-assert_version "tflint" "tflint -v" "0.10.1"
+assert_version "terraform" "terraform -v" "0.12.19"
+assert_version "tflint" "tflint -v" "0.13.4"
 assert_version "awscli" "aws --version" "1.16"
