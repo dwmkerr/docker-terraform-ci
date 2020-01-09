@@ -21,7 +21,8 @@ RUN apt-get update -qq && apt-get install -qq -y \
     unzip \
     ca-certificates \
     python \
-    python-pip
+    python-pip \
+    shellcheck
 
 # Install Terraform.
 RUN wget -q https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
