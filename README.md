@@ -11,6 +11,7 @@ The `dwmkerr/terraform-ci` Dockerfile provides a useful baseline image for run T
 * [Coding](#coding)
     * [The Makefile](#the-makefile)
     * [The Tests](#the-tests)
+    * [Creating a Release](#creating-a-release)
 
 <!-- vim-markdown-toc -->
 
@@ -70,3 +71,13 @@ The makefile contains commands to build, test and deploy. Parameters can be pass
 ## The Tests
 
 The tests are simple bash scripts which check for basic capabilities *which relate to the image*. Essentially, this means they'll test the tools are installed.
+
+## Creating a Release
+
+To create a release:
+
+- Merge your work to master
+- Use `npm run release` to bump and update the changelog
+- Push and deploy `git push --follow-tags`
+
+A `package.json` file is used to store the version number, however the project has no other dependencies on Node.js than this part of the release process. It is just allows for convenient management of a `CHANGELOG.md` file and the version by using [standard-version](https://github.com/conventional-changelog/standard-version).
