@@ -24,7 +24,7 @@ The image is based on Debian Stretch (specifically the official [`debian:stretch
 
 This image contains a number of tools which are useful when working with Terraform.
 
-All baseline Debian stretch tools:
+All baseline Debian stretch tools, as well as tools needed by CircleCI 2 images, and some useful utilities:
 
 - `make`
 - `wget`
@@ -34,10 +34,8 @@ All baseline Debian stretch tools:
 - `gzip`
 - `unzip`
 - `ca-certificates`
-
-Some basic additional tools:
-
-- [`shellcheck`](https://github.com/koalaman/shellcheck) - for checking shell scripts
+- `curl`
+- [`shellcheck`](https://github.com/koalaman/shellcheck)
 
 Terraform, and [Terraform Lint](https://github.com/wata727/tflint):
 
