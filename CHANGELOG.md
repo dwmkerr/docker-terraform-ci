@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.7](https://github.com/dwmkerr/docker-terraform-ci/compare/v0.3.6...v0.3.7) (2020-02-28)
+
 ### [0.3.6](https://github.com/dwmkerr/docker-terraform-ci/compare/v0.3.5...v0.3.6) (2020-02-12)
 
 ### [0.3.5](https://github.com/dwmkerr/docker-terraform-ci/compare/v0.3.2...v0.3.5) (2020-01-15)
