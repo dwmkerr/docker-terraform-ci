@@ -1,6 +1,6 @@
 {
   "name": "docker-terraform-ci",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Dockerfile for Terraform CI related tasks.",
   "scripts": {
     "release": "standard-version"
