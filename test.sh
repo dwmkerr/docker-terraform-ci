@@ -4,7 +4,6 @@
 set -e
 
 IMAGE_NAME="dwmkerr/terraform-ci" # For CI
-# IMAGE_NAME="docker-terraform-ci" # For local testing
 
 function assert_installed {
     program=$1
@@ -35,6 +34,7 @@ function assert_version {
 }
 
 # Assert the versions of tools we need.
-assert_version "terraform" "terraform -v" "0.12.23"
-assert_version "tflint" "tflint -v" "0.13.4"
+assert_version "terraform" "terraform -v" "0.13.0"
+assert_version "tflint" "tflint -v" "0.18.0"
 assert_version "awscli" "aws --version" "1.16"
+assert_version "checkov" "checkov -v" "1.0.484"

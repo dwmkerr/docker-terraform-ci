@@ -38,14 +38,16 @@ All baseline Debian stretch tools, as well as tools needed by CircleCI 2 images,
 - `curl`
 - [`shellcheck`](https://github.com/koalaman/shellcheck)
 
-Terraform, and [Terraform Lint](https://github.com/wata727/tflint):
+Terraform, [Terraform Lint](https://github.com/wata727/tflint) and [Checkov](https://github.com/bridgecrewio/checkov):
 
-- `terraform` (0.12)
-- `tflint` (0.10)
+- `terraform` (0.13)
+- `tflint` (0.18)
+- `checkov` (latest)
 
-Some tools which are useful for [Terraform Backends](https://www.terraform.io/docs/backends/)
+Cloud CLIs which are for [Terraform Backends](https://www.terraform.io/docs/backends/)
 
-- `aws`
+- `aws` (1.16)
+- `az` (latest)
 
 # Coding 
 
