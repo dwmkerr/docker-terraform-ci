@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.9](https://github.com/dwmkerr/docker-terraform-ci/compare/v0.3.8...v0.3.9) (2020-08-14)
+
+
+### Features
+
+* add azure-cli, add checkov, use tf 0.13, debian buster ([7139dda](https://github.com/dwmkerr/docker-terraform-ci/commit/7139dda5fe4dfddc3d5f10b2f2a5eaec95378486))
+
 ### [0.3.8](https://github.com/dwmkerr/docker-terraform-ci/compare/v0.3.7...v0.3.8) (2020-03-11)
 
 
